@@ -25,7 +25,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Compilar APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: gradlew assembleDebug --stacktrace
 
       - name: Guardar APK descargable
         uses: actions/upload-artifact@v4
